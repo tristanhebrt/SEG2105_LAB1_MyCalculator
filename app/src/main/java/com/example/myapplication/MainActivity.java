@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     btn_clear, btn_equal;
 
     TextView text_display;
+    TextView text_history;
+
+    String history = new String("");
 
     // This is to evaluate the math expression
     ScriptEngine engine;
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_equal = (Button) findViewById(R.id.btn_equal);
 
         text_display = (TextView) findViewById(R.id.textview_display);
+        text_history = (TextView) findViewById(R.id.textView_history);
 
         setClickListeners();
     }
@@ -141,6 +145,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         result = result.replace(".00", "");
                     }
                     text_display.setText(result);
+
+                    history = history+"\n"+result; // Adds result to history
+                    text_history.setText(history);
+
                 } catch (ScriptException e) {
                     text_display.setText("ERROR");
                 }
@@ -151,14 +159,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String evaluate(String expression) throws ScriptException {
         String result = engine.eval(expression).toString();
         BigDecimal decimal = new BigDecimal(result);
-        return decimal.setScale(2, RoundingMode.HALF_UP).toPlainString(); // switched out BigDecimal.ROUND_HALF_UP to fix error
+        return decimal.setScale(2, RoundingMode.HALF_UP).toPlainString(); // Switched out BigDecimal.ROUND_HALF_UP to fix error
     }
 
     private void addNumber(String number){
         text_display.setText(text_display.getText()+number);
+
+        history = history+number;  // Adds equations to history
+        text_history.setText(history);
     }
 
     private void clear_display(){
         text_display.setText("");
+
+        history = "";  // Clears history
+        text_history.setText(history);
     }
 }
