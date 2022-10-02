@@ -4,14 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#252525">
+
 
     <TableLayout
         android:id="@+id/tableLayout"
+        android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#605858"
+        android:paddingHorizontal="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <TableRow
@@ -20,31 +26,45 @@
 
             <Button
                 android:id="@+id/btn_one"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_one" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_one"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_two"
-                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_two" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_two"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_three"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_three" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_three"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_plus"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_plus" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_plus"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
         </TableRow>
 
         <TableRow
@@ -53,31 +73,47 @@
 
             <Button
                 android:id="@+id/btn_four"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_four" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_four"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_five"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_five" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_five"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_six"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_six" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_six"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_minus"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_minus" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_minus"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
         </TableRow>
 
         <TableRow
@@ -86,32 +122,48 @@
 
             <Button
                 android:id="@+id/btn_seven"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_seven" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_seven"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_eight"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_eight" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_eight"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_nine"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_nine" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_nine"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_multiply"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="@string/btn_multiply"
+                android:textSize="30sp"
 
-                android:text="@string/btn_multiply" />
+                app:cornerRadius="50sp" />
         </TableRow>
 
         <TableRow
@@ -120,44 +172,66 @@
 
             <Button
                 android:id="@+id/btn_clear"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_clear" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_clear"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_zero"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_zero" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_zero"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_dot"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_dot" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_dot"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
 
             <Button
                 android:id="@+id/btn_divide"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_divide" />
+                android:layout_margin="5sp"
+                android:text="@string/btn_divide"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
         </TableRow>
 
         <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5sp"
+            android:textSize="30sp"
+            app:cornerRadius="50sp">
 
             <Button
                 android:id="@+id/btn_equal"
-                style="@style/Widget.AppCompat.Button.Borderless"
+
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="@string/btn_equal" />
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:text="@string/btn_equal"
+                android:textSize="30sp"
+                app:cornerRadius="50sp" />
         </TableRow>
 
     </TableLayout>
@@ -169,8 +243,10 @@
         android:gravity="end"
         android:hint="@string/display"
         android:textSize="50sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

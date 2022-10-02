@@ -137,6 +137,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 String result = null;
                 try {
                     result = evaluate(text_display.getText().toString());
+                    if(result.endsWith(".00")){ // Removes the .00 from the result
+                        result = result.replace(".00", "");
+                    }
                     text_display.setText(result);
                 } catch (ScriptException e) {
                     text_display.setText("ERROR");
